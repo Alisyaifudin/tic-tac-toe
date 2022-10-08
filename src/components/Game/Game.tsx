@@ -27,8 +27,8 @@ function Game() {
 			<div className={styles.div}>
 				<p className={styles.p}>
 					{winner
-						? winner === "draw"
-							? "Draw"
+						? winner === "tie"
+							? "Tie"
 							: `Winner: ${winner}`
 						: `Next Player: ${xIsNext ? "X" : "O"}`}
 				</p>

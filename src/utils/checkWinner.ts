@@ -9,7 +9,7 @@ export function checkWinner(boxes: string[]) {
     [0, 4, 8],
     [2, 4, 6],
   ];
-  if (!boxes.includes('')) return 'draw';
+  if (!boxes.includes('')) return 'tie';
   for (let i = 0; i < winningLines.length; i++) {
     const [a, b, c] = winningLines[i];
     if (boxes[a] && boxes[a] === boxes[b] && boxes[a] === boxes[c]) {
